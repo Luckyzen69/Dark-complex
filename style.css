@@ -5,7 +5,9 @@ body {
     background-color: #111;
     color: #fff;
 }
-
+html,body{
+    scroll-behavior: smooth;
+}
 nav {
     background-color: #333;
     padding: 1rem;
@@ -82,8 +84,28 @@ button:hover {
     font-size: 1.5rem;
     margin-bottom: 1rem;
 }
-
 .source {
     font-size: 1rem;
     font-style: italic;
+}
+.responsive{
+    max-width: 100%;
+    height: auto;
+}
+.top {
+    --offset: 50px; 
+    position: sticky;
+    place-self: end;
+    margin-top: calc(100vh + var(--offset));
+    
+    /* visual styling */
+    padding: 10px;
+    font-family: sans-serif;
+    border-radius: 100px;
+    white-space: nowrap;
+   bottom: 20px;
+}
+.topp{
+    color: white;
+    font-size: 50px;
 }
